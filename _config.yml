@@ -4,18 +4,18 @@ url : "https://kosy318.github.io"
 
 # Blog Settings
 theme_settings :
-  title : Grape Theme
+  title : SOO
   favicon : assets/favicon.ico
 
   # Profile Settings
   profile :
     image : assets/img/smile.png
     username : Sooyeon Ko
-    description : ...
+    description : 최선을 다해 '잘'하는 초보 개발자 입니다.
     experience :
-      - start : 2017-05-03
-        end : 2018-05-06
-        experience : company name, title
+      - start : 2017-03
+        end : 2022-08
+        experience : 부산대학교, 물리학과 + 컴퓨터공학과
     skills : 
       - skill : c++
         value : 85  # Percent value
