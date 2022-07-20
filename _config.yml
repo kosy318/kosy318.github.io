@@ -17,14 +17,18 @@ theme_settings :
         end : 2018-05-06
         experience : company name, title
     skills : 
-      - skill : HTML5 & CSS
+      - skill : c++
         value : 85  # Percent value
+      - skill : python
+        value : 70
+      - skill : java
+        value : 50
         
   # Icons
   icons :
-    email:  # Full email address, e.g. "sample@google.com"
+    email: kosy1782@gmail.com # Full email address, e.g. "sample@google.com"
     linkedin:  # Full URL 
-    github: naye0ng
+    github: github.com/kosy318
     gitlab: 
     bitbucket: 
     google_plus:
