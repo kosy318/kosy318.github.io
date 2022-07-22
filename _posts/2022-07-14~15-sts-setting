@@ -1,0 +1,141 @@
+zulu(jdk), apache(서버, c\ssafy 안에 풀었음), 
+https://download.springsource.com/release/STS/3.9.14.RELEASE/dist/e4.15/spring-tool-suite-3.9.14.RELEASE-e4.15.0-win32-x86_64.zip (sts: spring tool suite, 안에 eclipse가 있음,  c\ssafy 안에 풀었음, ssafy 안에 workspace\startcamp 만들어서 지정?했나?)다운 및 설치
+
+아파치 설정 : sts 아래 Servers tab->왼쪽클릭->new->버전 9.0 선택->next->폴더 선택->finish
+
+project 생성<br>
+sts: new->other->java>java project<br>
+OpenPerspective->Java(오른쪽 위)<br>
+
+패키지, class 생성(psvm 체크)
+
+글꼴 스타일 지정 하는 법 : window 메뉴->preferences(환경설정)->General->Appearance->Colors and Fonts->Basic->Text Font->edit<br>
+ctrl+shift+(+|-) : 글자 크기 조정
+
+ctrl+space : 자동완성<br>
+run as->Java Application : 실행
+
+ctrl+alt+위아래 : 복사<br>
+alt+위아래 : 줄단위 이동<br>
+ctrl+d : 줄삭제<br>
+ctrl+shift+f : format<br>
+ctrl+shift+/ : 주석
+
+1. Primitive Type(기본형)
+- 논리형 - boolean
+- 숫자형 - 정수형(byte[8bit], short[2byte], int[4byte], long[8byte], char[2byte]), 실수형(float[4byte], double[8byte])
+
+2. Reference Type(참조형)
+- class, 배열
+
+Type Casting<br>
+Automatic promotions (implicit Type Casting )
+- 작은 크기의 타입은 큰 크기의 타입으로 자동으로 형변환 된다
+- 정수형은 실수형으로 자동형변환 된다
+
+Explicit Type Casting(명시적)
+- 큰 크기의 타입을 작은 크기의 타입으로 변경할 경우
+- 실수형을 정수형의 타입으로 변경할 경우
+- identifier =( target_type ) value;
+
+byte(1byte)<short(2byte)<int(4byte)<long(8byte) <br>
+float(4byte)<double(8byte) <br>
+⭐float(4byte)>long(8byte) 
+
+&& 나 || 는 앞을 계산해서 전체 결과가 나오면 뒤에 것을 확인안함 (short circuit logic)<br>
+& 나 |와 같이 한개짜리는 결론이 났어도 뒤에도 확인함
+
+```java
+switch(expr){
+  ...
+}
+```
+expr은 반드시 정수형(int, byte, short, char, jdk 7 이상부터는 String도 가능)이어야함
+
+#### 웹 WebProject
+new->Other->Web->Dynamic Web Project
+
+web.xml : 웹 프로젝트의 환경설정의 내용을 가지고 있음(Generate web.xml deployment descriptor check)
+
+Open perspective -> JavaEE로 바껴있음<br>
+
+환경
+- Standard(pc) : main함수 있음. J2SE(java2[jdk1.2부터] standard edition이라고 부름). 실행시키려면 실행시키는 파일이 반드시 그 컴퓨터에 있어야함(.class같은 파일). application
+- Enterprise(browser) : J2EE(java2 Enterprise edition). 브라우저를 열고 주소창에 주소를 넣고 실행하면 실행됨. 실행하려고 하는 프로그램이 내 컴퓨터에 없어도 되지만 네트워크는 연결돼있어야함. 원격 환경을 의미. 즉, 서비스를 해주는 서버하고 서비스를 이용하는 클라이언트가 떨어져있다는 의미. web application
+- Mobile: J2ME(java2 micro edition).
+
+WebContent->WEB-INF->web.xml 에서 환경설정 가능
+
+Java 파일은 Java Resources->src에 넣고<br>
+나머지는 WebContent에 넣음(image, 동영상, html, css 등등)
+
+WebContent 내부에 폴더를 만들어줌<br>
+html, img, css 등등
+
+Web App
+- Front-End(화면, 디자인) : html(문서의 구조, 내용), css(style), javascript
+- Back-End(Logic) : sevlet, jsp
+- Data Layer(Database)
+
+html 파일 만들기(new->HTML file)<br>
+encoding<br>
+window->Preferences->Encoding검색->General->Workspace->Text file encoding->utf-8<br>
+Preferences->Encoding검색->Web->HTML files->Encoding->UTF-8(맨 위)<br>
+CSS, JSP도 UTF-8로 변경
+
+Window->Web Browser->Chrome
+
+html tag 구분
+- block 요소(tag) : 줄바꿈이 됨
+- inline 요소 : 줄바꿈이 안됨
+
+element = 태그+내용물<br>
+Attribute(속성) : 생략가능, Element의 속성지정,  atrribute_name과 value set을 표준으로 정의
+
+Block level element
+- 대부분 Inline 요소와 Text 요소를 포함
+- 일부 요소는 Block 요소를 포함
+- 새로운 행에 표시
+
+Inline level element
+- 오직 Inline 요소와 Text 요소 만 포함
+- Text 처럼 취급됨
+- 새로운 행에 표시 되지 않음
+
+semantic tag : 태그 이름만 봐도 의미를 알 수 있게
+
+CSS(Cascading Style Sheets)<br>
+장점
+- 구조와 표현의 분리 , Sementic Markup
+- File Size 감소
+- 효율적이고 정교한 디자인 제어
+- Browser 호환성에 대처 용이
+
+CSS를 사용하는 3 가지 방법
+- External Style sheet, <link>태그 사용
+- Internal Style Sheet, <style>태그 사용
+- Inline Styles
+
+![image](https://user-images.githubusercontent.com/77595685/179126380-b5457d4a-26ec-4bbd-94ea-9d268d6ca41a.png)
+
+Selector (선택자) : 스타일을 지정할 대상 요소를 선택하는 데 사용하는 패턴 표기법
+- Universal Selector
+- Type Selector
+
+중앙정렬할때, margin: auto를 사용하는데 반드시 width값이 정해져있어야함
+
+Project 가져오기<br>
+Import->Import->General->Existing Projects into Workspace->Select root directory(압축 푼 상태) Select archive file(압축된 상태)->finish
+
+framework : 반제품? 틀. 이용법을 익혀야하는 단점이 있음->spring boot<br>
+src\main\resources : 환경설정, db작업, 자바가 아닌것들<br>
+src\main\resources\application.properties : 프로젝트를 실행시킬 때 필요한 환경 정보들(환경 설정 파일)<br>
+localhost : 내 컴퓨터->사용할 수 없음 컴퓨터에 DB가 없음(나중에 사용)<br>
+두번째것 주소 주석 해제
+
+src\main\resources\static : css, js, html<br>
+src\main\resources\mappers\word.xml : 무슨 정보를 가져오고 집어넣을건지?
+
+src\main\java : java file은 여기에 넣으면됨<br>
+@ : annotation<br>
+main이 있는 프로그램 : application(SE, pc에서 돌리고 끝). boot의 특징-웹에서 돌아가지만 main함수 형식(서버를 실행시키는 프로그램 : main)
