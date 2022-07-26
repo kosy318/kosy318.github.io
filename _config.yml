@@ -22,13 +22,15 @@ theme_settings :
       - skill : python
         value : 70
       - skill : java
-        value : 50
+        value : 65
+      - skill : javaScript
+        value : 60
         
   # Icons
   icons :
     email: kosy1782@gmail.com # Full email address, e.g. "sample@google.com"
     linkedin:  # Full URL 
-    github: github.com/kosy318
+    github: kosy318
     gitlab: 
     bitbucket: 
     google_plus:
@@ -38,7 +40,7 @@ theme_settings :
     instagram:
 
   # Disqus
-  disqus_shortname :
+  disqus_shortname : soo
 
 # Pagination
 paginate: 5
