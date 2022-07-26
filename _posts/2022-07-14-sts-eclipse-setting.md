@@ -23,6 +23,8 @@ OpenPerspective->Java(오른쪽 위)<br>
 5. Project 가져오기<br>
 Import->Import->General->Existing Projects into Workspace->Select root directory(압축 푼 상태) Select archive file(압축된 상태)->finish
 
+6. eclipse.ini(sts.ini) 파일 내에 -Dfile.encoding=UTF-8 추가
+
 <br>
 <hr>
 <br>
