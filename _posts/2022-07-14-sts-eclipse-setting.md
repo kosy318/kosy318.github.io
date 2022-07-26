@@ -2,9 +2,9 @@
 layout: post
 title: sts/eclipse setting
 subtitle : start studying java(1)
-tags: [Demo]
+tags: [IDE, setting, JAVA]
 author: Sooyeon Ko
-comments : True
+comments : False
 ---
 
 1. 설치<br>
