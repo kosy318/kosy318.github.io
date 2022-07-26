@@ -1,8 +1,8 @@
 ---
 layout: post
-title: sts 및 eclipse setting
-subtitle : java 공부를 시작하면서..1
-tags: [IDE, setting]
+title: sts/eclipse setting
+subtitle : start studying java(1)
+tags: [Demo]
 author: Sooyeon Ko
 comments : True
 ---
