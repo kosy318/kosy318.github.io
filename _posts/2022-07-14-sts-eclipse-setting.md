@@ -23,9 +23,9 @@ OpenPerspective->Java(오른쪽 위)<br>
 <hr>
 <br>
 
-- 글꼴 스타일 지정 하는 법 : window 메뉴->preferences(환경설정)->General->Appearance->Colors and Fonts->Basic->Text Font->edit
+- 글꼴 스타일 지정 하는 법 : <br>window 메뉴->preferences(환경설정)->General->Appearance->Colors and Fonts->Basic->Text Font->edit
 
-- ctrl+shift+(+|-) : 글자 크기 조정
+- ctrl+shift+(+/-) : 글자 크기 조정
 
 - ctrl+space : 자동완성<br>
 - run as->Java Application : 실행
