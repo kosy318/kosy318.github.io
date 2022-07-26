@@ -19,6 +19,10 @@ sts: new->other->java>java project<br>
 OpenPerspective->Java(오른쪽 위)<br>
 
 4. 패키지, class 생성(psvm 체크)
+
+5. Project 가져오기<br>
+Import->Import->General->Existing Projects into Workspace->Select root directory(압축 푼 상태) Select archive file(압축된 상태)->finish
+
 <br>
 <hr>
 <br>
