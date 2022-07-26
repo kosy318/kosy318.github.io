@@ -4,7 +4,7 @@ title: sts 및 eclipse setting
 subtitle : java 공부를 시작하면서..1
 tags: [IDE, setting]
 author: Sooyeon Ko
-comments : False
+comments : True
 ---
 
 1. 설치<br>
