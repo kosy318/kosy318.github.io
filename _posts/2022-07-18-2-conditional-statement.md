@@ -2,7 +2,7 @@
 layout: post
 title: About Conditional Statement(조건문)
 subtitle : start studying java(5)
-tags: [JAVA, Conditional Statement, JAVA 문법]
+tags: [JAVA, Conditional Statement, JAVA 공부]
 author: Sooyeon Ko
 comments : False
 ---
