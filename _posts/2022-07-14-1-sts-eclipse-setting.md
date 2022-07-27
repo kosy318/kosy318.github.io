@@ -41,3 +41,5 @@ Import->Import->General->Existing Projects into Workspace->Select root directory
 - ctrl+d : 줄삭제
 - ctrl+shift+f : format
 - ctrl+shift+/ : 주석
+
+- ctrl+shift+O : import
