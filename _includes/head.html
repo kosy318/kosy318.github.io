@@ -42,4 +42,10 @@
     content="{{ site.url }}/{% if page.image %}{{ page.image }}{% else %}{{ site.theme_settings.profile.image }}{% endif %}" />
 
   <title>{{ title }}</title>
+  
+  <!-- highlight theme-->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/stackoverflow-light.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+  <!-- load() -->
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
