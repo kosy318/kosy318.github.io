@@ -16,6 +16,9 @@ theme_settings :
       - start : 2017-03
         end : 2022-08
         experience : 부산대학교, 물리학과 + 컴퓨터공학과
+      - start : 2022-07
+        end : 2023-07
+        experience : SSAFY 8th (Samsung SW Academy)
     skills : 
       - skill : c++
         value : 85  # Percent value
